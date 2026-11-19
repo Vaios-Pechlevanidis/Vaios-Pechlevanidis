@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" shape-rendering="crispEdges">
+<style>.dt{animation:dt 1.2s steps(1) infinite}@keyframes dt{0%,100%{transform:translateY(0)}15%{transform:translateY(-8px)}30%{transform:translateY(-4px)}45%{transform:translateY(0)}}</style>
+<rect width="120" height="120" fill="#0b0f1a"/>
+<path fill="#8b5cf6" d="M4 0h112v4h-112zM4 116h112v4h-112zM0 4h4v112h-4zM116 4h4v112h-4z"/>
+<path fill="#00f0ff" d="M20 22h80v4h-80zM20 74h80v4h-80zM16 26h4v48h-4zM100 26h4v48h-4zM32 78h12v4h-12zM28 82h8v4h-8zM24 86h4v4h-4z"/>
+<rect x="20" y="26" width="80" height="48" fill="#131a2e"/>
+<rect class="dt" style="animation-delay:0.0s" x="36" y="46" width="12" height="12" fill="#00f0ff"/>
+<rect class="dt" style="animation-delay:0.2s" x="54" y="46" width="12" height="12" fill="#8b5cf6"/>
+<rect class="dt" style="animation-delay:0.4s" x="72" y="46" width="12" height="12" fill="#ff2bd6"/>
+</svg>

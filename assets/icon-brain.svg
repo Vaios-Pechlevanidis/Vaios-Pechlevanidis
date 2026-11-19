@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" shape-rendering="crispEdges">
+<style>.syn{animation:syn 1.5s steps(1) infinite;opacity:0}@keyframes syn{0%,12%{opacity:1}13%,100%{opacity:0}}.spk{animation:spk 1.2s steps(1) infinite}@keyframes spk{50%{opacity:0}}</style>
+<rect width="120" height="120" fill="#0b0f1a"/>
+<path fill="#8b5cf6" d="M4 0h112v4h-112zM4 116h112v4h-112zM0 4h4v112h-4zM116 4h4v112h-4z"/>
+<path fill="#ff2bd6" d="M36 30h6v6h-6zM42 30h6v6h-6zM48 30h6v6h-6zM54 30h6v6h-6zM66 30h6v6h-6zM72 30h6v6h-6zM78 30h6v6h-6zM30 36h6v6h-6zM60 36h6v6h-6zM84 36h6v6h-6zM24 42h6v6h-6zM42 42h6v6h-6zM48 42h6v6h-6zM60 42h6v6h-6zM72 42h6v6h-6zM90 42h6v6h-6zM18 48h6v6h-6zM36 48h6v6h-6zM60 48h6v6h-6zM78 48h6v6h-6zM96 48h6v6h-6zM18 54h6v6h-6zM48 54h6v6h-6zM60 54h6v6h-6zM96 54h6v6h-6zM18 60h6v6h-6zM30 60h6v6h-6zM36 60h6v6h-6zM60 60h6v6h-6zM72 60h6v6h-6zM78 60h6v6h-6zM96 60h6v6h-6zM24 66h6v6h-6zM48 66h6v6h-6zM60 66h6v6h-6zM84 66h6v6h-6zM90 66h6v6h-6zM30 72h6v6h-6zM36 72h6v6h-6zM42 72h6v6h-6zM60 72h6v6h-6zM72 72h6v6h-6zM78 72h6v6h-6zM54 78h6v6h-6zM60 78h6v6h-6zM66 78h6v6h-6zM54 84h6v6h-6zM60 84h6v6h-6zM66 84h6v6h-6z"/>
+<rect class="syn" style="animation-delay:0.00s" x="42" y="72" width="6" height="6" fill="#00f0ff"/>
+<rect class="syn" style="animation-delay:0.15s" x="18" y="48" width="6" height="6" fill="#00f0ff"/>
+<rect class="syn" style="animation-delay:0.30s" x="48" y="54" width="6" height="6" fill="#00f0ff"/>
+<rect class="syn" style="animation-delay:0.45s" x="60" y="78" width="6" height="6" fill="#00f0ff"/>
+<rect class="syn" style="animation-delay:0.60s" x="72" y="72" width="6" height="6" fill="#00f0ff"/>
+<rect class="syn" style="animation-delay:0.75s" x="48" y="66" width="6" height="6" fill="#00f0ff"/>
+<rect class="syn" style="animation-delay:0.90s" x="42" y="30" width="6" height="6" fill="#00f0ff"/>
+<rect class="syn" style="animation-delay:1.05s" x="72" y="60" width="6" height="6" fill="#00f0ff"/>
+<rect class="syn" style="animation-delay:1.20s" x="90" y="42" width="6" height="6" fill="#00f0ff"/>
+<rect class="syn" style="animation-delay:1.35s" x="54" y="30" width="6" height="6" fill="#00f0ff"/>
+<path class="spk" style="animation-delay:0.0s" fill="#ffd23f" d="M18 16h4v12h-4zM14 20h12v4h-12z"/>
+<path class="spk" style="animation-delay:0.3s" fill="#ffd23f" d="M102 20h4v12h-4zM98 24h12v4h-12z"/>
+<path class="spk" style="animation-delay:0.6s" fill="#ffd23f" d="M16 96h4v12h-4zM12 100h12v4h-12z"/>
+<path class="spk" style="animation-delay:0.9s" fill="#ffd23f" d="M104 94h4v12h-4zM100 98h12v4h-12z"/>
+</svg>

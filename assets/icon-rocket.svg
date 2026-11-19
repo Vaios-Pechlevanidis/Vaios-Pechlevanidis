@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" shape-rendering="crispEdges">
+<style>.sf{animation:sf 1.2s steps(10) infinite}@keyframes sf{from{transform:translateY(-12px)}to{transform:translateY(124px)}}.fa{animation:fa .3s steps(1) infinite}.fb{animation:fb .3s steps(1) infinite}@keyframes fa{50%{opacity:0}}@keyframes fb{0%{opacity:0}50%{opacity:1}}.rk{animation:rk .8s steps(1) infinite}@keyframes rk{50%{transform:translate(2px,-2px)}}</style>
+<rect width="120" height="120" fill="#0b0f1a"/>
+<path fill="#8b5cf6" d="M4 0h112v4h-112zM4 116h112v4h-112zM0 4h4v112h-4zM116 4h4v112h-4z"/>
+<rect class="sf" style="animation-delay:-0.74s" x="68" y="0" width="3" height="9" fill="#e6edf3"/>
+<rect class="sf" style="animation-delay:-1.04s" x="32" y="0" width="3" height="6" fill="#8b5cf6"/>
+<rect class="sf" style="animation-delay:-0.56s" x="74" y="0" width="3" height="12" fill="#e6edf3"/>
+<rect class="sf" style="animation-delay:-0.67s" x="52" y="0" width="3" height="12" fill="#00f0ff"/>
+<rect class="sf" style="animation-delay:-0.87s" x="14" y="0" width="3" height="6" fill="#00f0ff"/>
+<rect class="sf" style="animation-delay:-1.14s" x="66" y="0" width="3" height="9" fill="#e6edf3"/>
+<rect class="sf" style="animation-delay:-0.29s" x="30" y="0" width="3" height="6" fill="#e6edf3"/>
+<rect class="sf" style="animation-delay:-1.05s" x="74" y="0" width="3" height="12" fill="#e6edf3"/>
+<rect class="sf" style="animation-delay:-0.46s" x="98" y="0" width="3" height="12" fill="#e6edf3"/>
+<g class="rk"><path fill="#e6edf3" d="M54 12h6v6h-6zM60 12h6v6h-6zM48 18h6v6h-6zM54 18h6v6h-6zM60 18h6v6h-6zM66 18h6v6h-6zM42 24h6v6h-6zM48 24h6v6h-6zM54 24h6v6h-6zM60 24h6v6h-6zM66 24h6v6h-6zM72 24h6v6h-6zM42 30h6v6h-6zM48 30h6v6h-6zM66 30h6v6h-6zM72 30h6v6h-6zM42 36h6v6h-6zM48 36h6v6h-6zM66 36h6v6h-6zM72 36h6v6h-6zM42 42h6v6h-6zM48 42h6v6h-6zM54 42h6v6h-6zM60 42h6v6h-6zM66 42h6v6h-6zM72 42h6v6h-6zM42 48h6v6h-6zM48 48h6v6h-6zM54 48h6v6h-6zM60 48h6v6h-6zM66 48h6v6h-6zM72 48h6v6h-6zM42 54h6v6h-6zM48 54h6v6h-6zM54 54h6v6h-6zM60 54h6v6h-6zM66 54h6v6h-6zM72 54h6v6h-6zM48 60h6v6h-6zM54 60h6v6h-6zM60 60h6v6h-6zM66 60h6v6h-6zM48 66h6v6h-6zM54 66h6v6h-6zM60 66h6v6h-6zM66 66h6v6h-6zM48 72h6v6h-6zM66 72h6v6h-6z"/><path fill="#00f0ff" d="M54 30h6v6h-6zM60 30h6v6h-6zM54 36h6v6h-6zM60 36h6v6h-6z"/><path fill="#ff2bd6" d="M36 54h6v6h-6zM78 54h6v6h-6zM30 60h6v6h-6zM36 60h6v6h-6zM78 60h6v6h-6zM84 60h6v6h-6zM30 66h6v6h-6zM84 66h6v6h-6z"/><g class="fa"><path fill="#ffd23f" d="M48 78h6v6h-6zM54 78h6v6h-6zM60 78h6v6h-6zM66 78h6v6h-6z"/><path fill="#ff7a00" d="M54 84h6v6h-6zM60 84h6v6h-6z"/></g><g class="fb"><path fill="#ff7a00" d="M48 78h6v6h-6zM66 78h6v6h-6zM54 90h6v6h-6zM60 90h6v6h-6z"/><path fill="#ffd23f" d="M54 78h6v6h-6zM60 78h6v6h-6zM48 84h6v6h-6zM54 84h6v6h-6zM60 84h6v6h-6zM66 84h6v6h-6z"/></g></g>
+<path fill="#8b5cf6" d="M4 0h112v4h-112zM4 116h112v4h-112zM0 4h4v112h-4zM116 4h4v112h-4z"/>
+</svg>
