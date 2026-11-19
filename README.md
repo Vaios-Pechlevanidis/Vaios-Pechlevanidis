@@ -8,15 +8,11 @@
 
 ## 👾 `whoami`
 
-```yaml
-name:      Vaios Pechlevanidis
-mission:   "Wiederkehrende Arbeit an Maschinen abgeben – damit Menschen sich auf das Wesentliche konzentrieren können."
-focus:
-  - KI-Agenten & LLM-Anwendungen
-  - Workflow-Automatisierung (APIs, Webhooks, Integrationen)
-  - Prozessoptimierung & Datenpipelines
-status:    🟢 offen für spannende Projekte & Kooperationen
-```
+<div align="center">
+
+<img src="./assets/whoami.gif" alt="Animierte whoami-Karte von Vaios Pechlevanidis" width="100%"/>
+
+</div>
 
 <div align="center">
 
@@ -79,5 +75,3 @@ status:    🟢 offen für spannende Projekte & Kooperationen
 <img src="./assets/footer.svg" alt="Thanks for visiting!" width="100%"/>
 
 </div>
-
-<!-- Die animierten Pixel-Art-SVGs werden mit `python3 scripts/generate_svgs.py` erzeugt. -->
