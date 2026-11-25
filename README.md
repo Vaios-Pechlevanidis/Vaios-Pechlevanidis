@@ -9,6 +9,6 @@
 
 <img src="./assets/profile/stats.svg" width="100%" alt="0 stars · 207 contributions · 13 repos · 5 followers"/>
 
-<a href="https://github.com/Vaios-Pechlevanidis"><img src="./assets/profile/social.svg" width="100%" alt="GitHub @vaios-pechlevanidis"/></a>
+<a href="https://github.com/Vaios-Pechlevanidis"><img src="./assets/profile/social-github.svg" width="50%" alt="GitHub @vaios-pechlevanidis"/></a><a href="https://www.linkedin.com/in/vaios-pechlevanidis-173ba0287/"><img src="./assets/profile/social-linkedin.svg" width="50%" alt="LinkedIn Vaios Pechlevanidis"/></a>
 
 </div>

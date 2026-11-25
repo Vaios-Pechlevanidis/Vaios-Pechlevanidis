@@ -5,7 +5,7 @@
   projects.svg  PROJECTS.LIST – pinned repos as a 2x2 grid with language rings
   shooter.svg   contribution grid that a little ship shoots down, cell by cell
   stats.svg     Profile Signal – stars, contributions, repos, followers
-  social.svg    GitHub handle pill
+  social-*.svg  GitHub + LinkedIn pills (two halves of one card, one link each)
 
 Run locally:  python3 scripts/generate_profile.py   (uses GITHUB_TOKEN or `gh auth token`)
 In Actions:   .github/workflows/readme.yml runs it daily.
@@ -22,6 +22,7 @@ import sys
 import urllib.request
 
 LOGIN = "Vaios-Pechlevanidis"
+LINKEDIN = "https://www.linkedin.com/in/vaios-pechlevanidis-173ba0287/"
 FALLBACK_DESC = "No description provided."
 # Repos shown in PROJECTS.LIST, in this order. Empty list = your pinned repos.
 FEATURED = ["BLOOM-GATHER", "EPA-Bachelorprojekt", "Bachelorarbeit-EPA", "IntelligentUserInterfaces"]
@@ -557,21 +558,43 @@ def stats_svg(d):
     return frame(h, "\n".join(body), f'{d["name"]} – GitHub stats')
 
 
-def social_svg(d):
-    h = 120
-    handle = "@" + d["login"]
-    pw = max(text_w(handle, 15, bold=True) + 80, 200)
-    px, py = (W - pw) / 2, h / 2 - 26
-    body = f"""
-<defs><linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e6edf3" stop-opacity=".7"/><stop offset=".5" stop-color="{ACCENT}" stop-opacity=".5"/><stop offset="1" stop-color="#e6edf3" stop-opacity=".6"/></linearGradient></defs>
+def _pill(px, h, icon, label, value):
+    pw = max(text_w(value, 15, bold=True) + 80, 200)
+    return pw, f"""
 <g class="fade" style="animation-delay:.15s">
-  <rect x="{px:.1f}" y="{py:.1f}" width="{pw:.1f}" height="52" rx="26" fill="#0d1117" stroke="url(#rim)" stroke-width="1.6"/>
-  <circle cx="{px + 30:.1f}" cy="{h / 2}" r="15" fill="#21262d"/>
-  <path d="{OCTOCAT}" fill="{TEXT}" transform="translate({px + 21:.1f},{h / 2 - 9}) scale(1.125)"/>
-  <text x="{px + 56:.1f}" y="{h / 2 - 4}" class="s" font-size="11" font-weight="600" letter-spacing=".6" fill="{MUTED}">GitHub</text>
-  <text x="{px + 56:.1f}" y="{h / 2 + 14}" class="s" font-size="15" font-weight="700" fill="{TEXT}">{esc(handle)}</text>
+  <rect x="{px:.1f}" y="{h / 2 - 26}" width="{pw:.1f}" height="52" rx="26" fill="#0d1117" stroke="url(#rim)" stroke-width="1.6"/>
+  {icon(px + 30, h / 2)}
+  <text x="{px + 56:.1f}" y="{h / 2 - 4}" class="s" font-size="11" font-weight="600" letter-spacing=".6" fill="{MUTED}">{esc(label)}</text>
+  <text x="{px + 56:.1f}" y="{h / 2 + 14}" class="s" font-size="15" font-weight="700" fill="{TEXT}">{esc(value)}</text>
 </g>"""
-    return frame(h, body, f"GitHub {handle}")
+
+
+def _github_icon(cx, cy):
+    return (f'<circle cx="{cx:.1f}" cy="{cy}" r="15" fill="#21262d"/>'
+            f'<path d="{OCTOCAT}" fill="{TEXT}" transform="translate({cx - 9:.1f},{cy - 9}) scale(1.125)"/>')
+
+
+def _linkedin_icon(cx, cy):
+    return (f'<circle cx="{cx:.1f}" cy="{cy}" r="15" fill="#0a66c2"/>'
+            f'<text x="{cx:.1f}" y="{cy + 5.5}" text-anchor="middle" class="s" font-size="15" font-weight="800" fill="#ffffff">in</text>')
+
+
+def social_svgs(d):
+    """One card, split into two halves so each pill can carry its own link in the README."""
+    h, seam, gap = 120, W / 2, 10
+    handle = "@" + d["login"]
+    gw, _ = _pill(0, h, _github_icon, "GitHub", handle)
+    _, gh_pill = _pill(seam - gap - gw, h, _github_icon, "GitHub", handle)
+    _, li_pill = _pill(seam + gap, h, _linkedin_icon, "LinkedIn", d["name"])
+    rim = (f'<defs><linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e6edf3" stop-opacity=".7"/>'
+           f'<stop offset=".5" stop-color="{ACCENT}" stop-opacity=".5"/><stop offset="1" stop-color="#e6edf3" stop-opacity=".6"/></linearGradient></defs>')
+    full = frame(h, rim + gh_pill + li_pill, f"GitHub {handle} · LinkedIn {d['name']}")
+    head = f'width="{W}" height="{h}" viewBox="0 0 {W} {h}"'
+    assert head in full
+    return {
+        "social-github": full.replace(head, f'width="{seam:.0f}" height="{h}" viewBox="0 0 {seam:.0f} {h}"'),
+        "social-linkedin": full.replace(head, f'width="{seam:.0f}" height="{h}" viewBox="{seam:.0f} 0 {seam:.0f} {h}"'),
+    }
 
 
 # ------------------------------------------------------------------ readme
@@ -589,7 +612,7 @@ def readme(d):
 
 <img src="{img.format("stats")}" width="100%" alt="{d["stars"]} stars · {d["contributions"]} contributions · {d["repos"]} repos · {d["followers"]} followers"/>
 
-<a href="{gh}"><img src="{img.format("social")}" width="100%" alt="GitHub @{d["login"]}"/></a>
+<a href="{gh}"><img src="{img.format("social-github")}" width="50%" alt="GitHub @{d["login"]}"/></a><a href="{LINKEDIN}"><img src="{img.format("social-linkedin")}" width="50%" alt="LinkedIn {esc(d["name"])}"/></a>
 
 </div>
 """
@@ -605,9 +628,12 @@ def main():
     d = summarize(user)
     os.makedirs(ASSETS, exist_ok=True)
     for name, fn in [("solar", solar_svg), ("projects", projects_svg), ("shooter", shooter_svg),
-                     ("stats", stats_svg), ("social", social_svg)]:
+                     ("stats", stats_svg)]:
         with open(os.path.join(ASSETS, f"{name}.svg"), "w") as fh:
             fh.write(fn(d))
+    for name, svg in social_svgs(d).items():
+        with open(os.path.join(ASSETS, f"{name}.svg"), "w") as fh:
+            fh.write(svg)
     with open(os.path.join(ROOT, "README.md"), "w") as fh:
         fh.write(readme(d))
     print(f"README + 5 cards · {d['repos']} repos · {d['contributions']} contributions")
