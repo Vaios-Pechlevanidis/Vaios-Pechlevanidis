@@ -5,9 +5,9 @@
 
 <a href="https://github.com/Vaios-Pechlevanidis?tab=repositories"><img src="./assets/profile/projects.svg" width="100%" alt="Projects: BLOOM-GATHER, EPA-Bachelorprojekt, Bachelorarbeit-EPA, IntelligentUserInterfaces"/></a>
 
-<img src="./assets/profile/shooter.svg" width="100%" alt="207 contributions in the last year, shot down by a tiny spaceship"/>
+<img src="./assets/profile/shooter.svg" width="100%" alt="208 contributions in the last year, shot down by a tiny spaceship"/>
 
-<img src="./assets/profile/stats.svg" width="100%" alt="0 stars · 207 contributions · 13 repos · 5 followers"/>
+<img src="./assets/profile/stats.svg" width="100%" alt="0 stars · 208 contributions · 13 repos · 5 followers"/>
 
 <a href="https://github.com/Vaios-Pechlevanidis"><img src="./assets/profile/social-github.svg" width="50%" alt="GitHub @vaios-pechlevanidis"/></a><a href="https://www.linkedin.com/in/vaios-pechlevanidis-173ba0287/"><img src="./assets/profile/social-linkedin.svg" width="50%" alt="LinkedIn Vaios Pechlevanidis"/></a>
 
