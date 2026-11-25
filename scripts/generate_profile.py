@@ -23,7 +23,8 @@ import urllib.request
 
 LOGIN = "Vaios-Pechlevanidis"
 FALLBACK_DESC = "No description provided."
-FEATURED = []  # repo names for PROJECTS.LIST; empty = pinned repos
+# Repos shown in PROJECTS.LIST, in this order. Empty list = your pinned repos.
+FEATURED = ["BLOOM-GATHER", "EPA-Bachelorprojekt", "Bachelorarbeit-EPA", "IntelligentUserInterfaces"]
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 ASSETS = os.path.join(ROOT, "assets", "profile")
@@ -422,7 +423,7 @@ def projects_svg(d):
             + ring(rx, ry, 22, 7, segs, delay + .3)
             + f'<text x="{rx}" y="{ry + 4}" text-anchor="middle" class="m" font-size="11" font-weight="700" fill="{TEXT}">{pct}%</text>'
             '</g>')
-    return frame(h, "\n".join(body), f'{d["name"]} – pinned projects')
+    return frame(h, "\n".join(body), f'{d["name"]} – projects')
 
 
 def shooter_svg(d):
@@ -582,7 +583,7 @@ def readme(d):
 
 <a href="{gh}"><img src="{img.format("solar")}" width="100%" alt="Solar system of {esc(d["name"])}: {esc(", ".join(f"{n} {p:.0f}%" for n, p, _ in d["lang_shares"][:5]))}"/></a>
 
-<a href="{gh}?tab=repositories"><img src="{img.format("projects")}" width="100%" alt="Pinned projects: {esc(", ".join(r["name"] for r in d["featured"]))}"/></a>
+<a href="{gh}?tab=repositories"><img src="{img.format("projects")}" width="100%" alt="Projects: {esc(", ".join(r["name"] for r in d["featured"]))}"/></a>
 
 <img src="{img.format("shooter")}" width="100%" alt="{d["contributions"]} contributions in the last year, shot down by a tiny spaceship"/>
 
