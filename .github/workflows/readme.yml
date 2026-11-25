@@ -1,15 +1,24 @@
 name: Refresh profile README
 
 on:
-  schedule:
-    - cron: "17 4 * * *"
-  workflow_dispatch:
+  # Every push to this repo (the bot's own commits use GITHUB_TOKEN and do not re-trigger).
   push:
     branches: [main]
-    paths: [scripts/generate_profile.py]
+  # Pushes to your other repos: picked up within the hour.
+  schedule:
+    - cron: "7 * * * *"
+  # Instant refresh from another repo, see the note at the end of this file.
+  repository_dispatch:
+    types: [refresh-readme]
+  workflow_dispatch:
 
 permissions:
   contents: write
+
+# Never run two refreshes at once; a newer trigger replaces a waiting one.
+concurrency:
+  group: refresh-readme
+  cancel-in-progress: false
 
 jobs:
   refresh:
@@ -28,7 +37,24 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md assets/profile
-          if ! git diff --cached --quiet; then
-            git commit -m "Refresh profile stats"
-            git push
+          if git diff --cached --quiet; then
+            echo "README already up to date."
+            exit 0
           fi
+          git commit -m "Refresh profile stats"
+          # Someone may have pushed while we were generating: replay on top and retry.
+          for attempt in 1 2 3; do
+            git pull --rebase -X theirs origin main && git push && exit 0
+            sleep 5
+          done
+          exit 1
+
+# Instant refresh after pushing elsewhere (optional):
+# add this job to the other repo's workflow and store a fine-grained token with
+# "Contents: read/write" on this profile repo as secret PROFILE_README_TOKEN there.
+#
+#   - run: >
+#       curl -sf -X POST -H "Authorization: Bearer ${{ secrets.PROFILE_README_TOKEN }}"
+#       -H "Accept: application/vnd.github+json"
+#       https://api.github.com/repos/Vaios-Pechlevanidis/Vaios-Pechlevanidis/dispatches
+#       -d '{"event_type":"refresh-readme"}'
