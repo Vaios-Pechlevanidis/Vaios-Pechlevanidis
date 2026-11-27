@@ -29,7 +29,7 @@
   <circle r="35.1" fill="#3572A5" opacity=".18"/>
   <circle r="31.1" fill="url(#pl0)"/>
   <text y="9.3" text-anchor="middle" class="s" font-size="22.4" font-weight="800" fill="#ffffff" fill-opacity=".85">Py</text>
-  <circle r="2.6" fill="#e6edf3"><animateMotion dur="4.0s" repeatCount="indefinite" begin="-0.6s" path="M38.11735897181345,0 a38.11735897181345,38.11735897181345 0 1,1 -76.2347179436269,0 a38.11735897181345,38.11735897181345 0 1,1 76.2347179436269,0"/></circle><circle r="2.2" fill="#e6edf3"><animateMotion dur="5.7s" repeatCount="indefinite" begin="-5.5s" path="M43.11735897181345,0 a43.11735897181345,43.11735897181345 0 1,1 -86.2347179436269,0 a43.11735897181345,43.11735897181345 0 1,1 86.2347179436269,0"/></circle><circle r="1.8" fill="#e6edf3"><animateMotion dur="7.4s" repeatCount="indefinite" begin="-1.8s" path="M48.11735897181345,0 a48.11735897181345,48.11735897181345 0 1,1 -96.2347179436269,0 a48.11735897181345,48.11735897181345 0 1,1 96.2347179436269,0"/></circle>
+  <circle r="2.6" fill="#e6edf3"><animateMotion dur="4.0s" repeatCount="indefinite" begin="-0.6s" path="M38.122884000899646,0 a38.122884000899646,38.122884000899646 0 1,1 -76.24576800179929,0 a38.122884000899646,38.122884000899646 0 1,1 76.24576800179929,0"/></circle><circle r="2.2" fill="#e6edf3"><animateMotion dur="5.7s" repeatCount="indefinite" begin="-5.5s" path="M43.122884000899646,0 a43.122884000899646,43.122884000899646 0 1,1 -86.24576800179929,0 a43.122884000899646,43.122884000899646 0 1,1 86.24576800179929,0"/></circle><circle r="1.8" fill="#e6edf3"><animateMotion dur="7.4s" repeatCount="indefinite" begin="-1.8s" path="M48.122884000899646,0 a48.122884000899646,48.122884000899646 0 1,1 -96.24576800179929,0 a48.122884000899646,48.122884000899646 0 1,1 96.24576800179929,0"/></circle>
   <text y="51.1" text-anchor="middle" class="m" font-size="13" font-weight="600" fill="#e6edf3" stroke="#05070b" stroke-width="3" paint-order="stroke">Python 47%</text>
 </g>
 <defs><radialGradient id="pl1" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#f7eea4"/><stop offset=".55" stop-color="#f1e05a"/><stop offset="1" stop-color="#857b32"/></radialGradient></defs>
@@ -37,8 +37,8 @@
   <animateMotion dur="37s" repeatCount="indefinite" begin="-26.1s" path="M228.0,255 a192,88.32000000000001 0 1,0 384,0 a192,88.32000000000001 0 1,0 -384,0"/>
   <circle r="28.2" fill="#f1e05a" opacity=".18"/>
   <circle r="24.2" fill="url(#pl1)"/>
-  <text y="7.3" text-anchor="middle" class="s" font-size="17.5" font-weight="800" fill="#0d1117" fill-opacity=".85">JS</text>
-  <circle r="2.6" fill="#e6edf3"><animateMotion dur="4.0s" repeatCount="indefinite" begin="-0.2s" path="M31.238198993501285,0 a31.238198993501285,31.238198993501285 0 1,1 -62.47639798700257,0 a31.238198993501285,31.238198993501285 0 1,1 62.47639798700257,0"/></circle><circle r="2.2" fill="#e6edf3"><animateMotion dur="5.7s" repeatCount="indefinite" begin="-2.4s" path="M36.238198993501285,0 a36.238198993501285,36.238198993501285 0 1,1 -72.47639798700257,0 a36.238198993501285,36.238198993501285 0 1,1 72.47639798700257,0"/></circle><circle r="1.8" fill="#e6edf3"><animateMotion dur="7.4s" repeatCount="indefinite" begin="-0.9s" path="M41.238198993501285,0 a41.238198993501285,41.238198993501285 0 1,1 -82.47639798700257,0 a41.238198993501285,41.238198993501285 0 1,1 82.47639798700257,0"/></circle>
+  <text y="7.3" text-anchor="middle" class="s" font-size="17.4" font-weight="800" fill="#0d1117" fill-opacity=".85">JS</text>
+  <circle r="2.6" fill="#e6edf3"><animateMotion dur="4.0s" repeatCount="indefinite" begin="-0.2s" path="M31.204414772801627,0 a31.204414772801627,31.204414772801627 0 1,1 -62.408829545603254,0 a31.204414772801627,31.204414772801627 0 1,1 62.408829545603254,0"/></circle><circle r="2.2" fill="#e6edf3"><animateMotion dur="5.7s" repeatCount="indefinite" begin="-2.4s" path="M36.20441477280163,0 a36.20441477280163,36.20441477280163 0 1,1 -72.40882954560325,0 a36.20441477280163,36.20441477280163 0 1,1 72.40882954560325,0"/></circle><circle r="1.8" fill="#e6edf3"><animateMotion dur="7.4s" repeatCount="indefinite" begin="-0.9s" path="M41.20441477280163,0 a41.20441477280163,41.20441477280163 0 1,1 -82.40882954560325,0 a41.20441477280163,41.20441477280163 0 1,1 82.40882954560325,0"/></circle>
   <text y="44.2" text-anchor="middle" class="m" font-size="13" font-weight="600" fill="#e6edf3" stroke="#05070b" stroke-width="3" paint-order="stroke">JavaScript 27%</text>
 </g>
 <defs><radialGradient id="pl2" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#edcebb"/><stop offset=".55" stop-color="#dea584"/><stop offset="1" stop-color="#7a5b49"/></radialGradient></defs>
@@ -47,7 +47,7 @@
   <circle r="25.2" fill="#dea584" opacity=".18"/>
   <circle r="21.2" fill="url(#pl2)"/>
   <text y="6.4" text-anchor="middle" class="s" font-size="15.3" font-weight="800" fill="#0d1117" fill-opacity=".85">Rs</text>
-  <circle r="2.6" fill="#e6edf3"><animateMotion dur="4.0s" repeatCount="indefinite" begin="-1.4s" path="M28.18683731834531,0 a28.18683731834531,28.18683731834531 0 1,1 -56.37367463669062,0 a28.18683731834531,28.18683731834531 0 1,1 56.37367463669062,0"/></circle>
+  <circle r="2.6" fill="#e6edf3"><animateMotion dur="4.0s" repeatCount="indefinite" begin="-1.4s" path="M28.224084004186572,0 a28.224084004186572,28.224084004186572 0 1,1 -56.448168008373145,0 a28.224084004186572,28.224084004186572 0 1,1 56.448168008373145,0"/></circle>
   <text y="41.2" text-anchor="middle" class="m" font-size="13" font-weight="600" fill="#e6edf3" stroke="#05070b" stroke-width="3" paint-order="stroke">Rust 18%</text>
 </g>
 <defs><radialGradient id="pl3" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#d4b180"/><stop offset=".55" stop-color="#b07219"/><stop offset="1" stop-color="#613f0e"/></radialGradient></defs>
@@ -56,7 +56,7 @@
   <circle r="19.7" fill="#b07219" opacity=".18"/>
   <circle r="15.7" fill="url(#pl3)"/>
   <text y="4.7" text-anchor="middle" class="s" font-size="11.3" font-weight="800" fill="#ffffff" fill-opacity=".85">Jv</text>
-  <circle r="2.6" fill="#e6edf3"><animateMotion dur="4.0s" repeatCount="indefinite" begin="-1.5s" path="M22.73350724327792,0 a22.73350724327792,22.73350724327792 0 1,1 -45.46701448655584,0 a22.73350724327792,22.73350724327792 0 1,1 45.46701448655584,0"/></circle>
+  <circle r="2.6" fill="#e6edf3"><animateMotion dur="4.0s" repeatCount="indefinite" begin="-1.5s" path="M22.730824797207084,0 a22.730824797207084,22.730824797207084 0 1,1 -45.46164959441417,0 a22.730824797207084,22.730824797207084 0 1,1 45.46164959441417,0"/></circle>
   <text y="35.7" text-anchor="middle" class="m" font-size="13" font-weight="600" fill="#e6edf3" stroke="#05070b" stroke-width="3" paint-order="stroke">Java 2%</text>
 </g>
 <defs><radialGradient id="pl4" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#8eb5e0"/><stop offset=".55" stop-color="#3178c6"/><stop offset="1" stop-color="#1b426d"/></radialGradient></defs>
@@ -65,7 +65,7 @@
   <circle r="19.7" fill="#3178c6" opacity=".18"/>
   <circle r="15.7" fill="url(#pl4)"/>
   <text y="4.7" text-anchor="middle" class="s" font-size="11.3" font-weight="800" fill="#ffffff" fill-opacity=".85">TS</text>
-  <circle r="2.6" fill="#e6edf3"><animateMotion dur="4.0s" repeatCount="indefinite" begin="-1.7s" path="M22.671151364271587,0 a22.671151364271587,22.671151364271587 0 1,1 -45.342302728543174,0 a22.671151364271587,22.671151364271587 0 1,1 45.342302728543174,0"/></circle>
+  <circle r="2.6" fill="#e6edf3"><animateMotion dur="4.0s" repeatCount="indefinite" begin="-1.7s" path="M22.668696954507368,0 a22.668696954507368,22.668696954507368 0 1,1 -45.337393909014736,0 a22.668696954507368,22.668696954507368 0 1,1 45.337393909014736,0"/></circle>
   <text y="35.7" text-anchor="middle" class="m" font-size="13" font-weight="600" fill="#e6edf3" stroke="#05070b" stroke-width="3" paint-order="stroke">TypeScript 2%</text>
 </g>
 <g opacity="0"><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;.04;.36;.42;1" dur="15s" begin="0s" repeatCount="indefinite"/>
